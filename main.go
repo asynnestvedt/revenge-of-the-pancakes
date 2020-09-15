@@ -80,6 +80,7 @@ func (stack *pancakeStack) flipAllToHappy(ch chan pancakeStack) {
 			if boundary > -1 {
 				stack.flip(boundary)
 				boundary = -1
+				started = false
 			}
 		}
 	}
